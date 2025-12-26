@@ -1,0 +1,88 @@
+{
+  "brand_name": "Google Workspace",
+  "brand_color": "4285f4",
+  "path_css_file": "services/google-workspace.css",
+  "subheader_image_link": "https://ik.imagekit.io/kvit/emailsolutions/services/google-workspace/subheader.svg",
+  "calculator_svg_link": "https://ik.imagekit.io/kvit/emailsolutions/services/google-workspace/calculator.svg",
+  "faq_svg_link": "https://ik.imagekit.io/kvit/emailsolutions/services/google-workspace/faq.svg",
+  "subheader_description": "Google Workspace, formerly known as G Suite, provides custom emails for your business and is a collection of services & tools provided by Google like Gmail, Drive, Docs, Sheets, etc.",
+  "introduction_logo_link": "https://ik.imagekit.io/kvit/emailsolutions/services/google-workspace/logo.png?tr=w-280",
+  "introduction_heading": "Increase your productivity with Google Workspace",
+  "introduction_description": "Google Workspace, formerly known as G Suite, is a feature-packed suite of tools which provides you a cohesive platform to increase your productivity & optimize your workflow. You can access all Google Workspace tools in one place from wherever you are and on whichever device is most convenient to you - whether that's a phone, laptop or tablet. Also, It comes with business version of Gmail which allows you to host emails on your own domain (ex: hello@example.com). Get in touch to get started right away with Google Workspace for your business!",
+  "introduction_video_link": "https://www.youtube.com/embed/EZmXEFGFeNA",
+  "features": [
+    {
+      "icon": "bxs-envelope",
+      "heading": "Mail",
+      "description": "It comes with a business version of Gmail, it allows you to have a custom email for your business (Example: you@yourbusiness.com). It also has features like Smart Compose which is a predictive writing suggestion feature that enables Gmail to autocomplete sentences as you go."
+    },
+    {
+      "icon": "bxs-server",
+      "heading": "Storage",
+      "description": "Google Drive is a part of the all-in-one suite, it is a cloud storage solution, the provided storage space varies from plan to plan with anywhere around 30GB to 5TB. It can also be synchronized with your computer. You can access files stored on it from anywhere & anytime."
+    },
+    {
+      "icon": "bxs-chat",
+      "heading": "Communication",
+      "description": "Apart from traditional mailing, workspace is also equipped with apps like Google Meet (which is a voice & video conferencing app) and Google Chat (which simplifies 1:1 and group messaging), these apps help to communicate with the team more efficiently."
+    },
+    {
+      "icon": "bxs-group",
+      "heading": "Collaborative Suite",
+      "description": "It includes powerful web-based collaborative tools such as Docs, Spreadsheets, Slides, etc. These tools give the ability to collaborate and create in real-time. Work on a single document with your teammates or people outside your company at ease. Multiple users can work simultaneously."
+    }
+  ],
+  "plans": [
+    {
+      "name": "Business Starter",
+      "price": 2520,
+      "features": [
+        "Custom and secure business email",
+        "100 participant video meetings",
+        "30 GB cloud storage per user",
+        "Security and management controls",
+        "Standard Support"
+      ]
+    },
+    {
+      "name": "Business Standard",
+      "price": 8064,
+      "features": [
+        "Custom and secure business email",
+        "<strong>150</strong> participant video meetings <strong>+ recording</strong>",
+        "<strong>2 TB</strong> cloud storage per user",
+        "Security and management controls",
+        "Standard Support (paid upgrade to Enhanced Support)"
+      ]
+    },
+    {
+      "name": "Business Plus",
+      "price": 15120,
+      "features": [
+        "Custom and secure business email + eDiscovery, retention",
+        "<strong>250</strong> participant video meetings + recording, <strong>attendance tracking</strong>",
+        "<strong>5 TB</strong> cloud storage per user",
+        "<strong>Enhanced</strong> security and management controls, including <strong>Vault and advanced endpoint management</strong>",
+        "Standard Support (paid upgrade to Enhanced Support)"
+      ]
+    }
+  ],
+  "faq_questions": [
+    [
+      "Why Google Workspace Over Microsoft 365?",
+      "Google Workspace provides a much simpler licensing model than Microsoft 365. Microsoft's licensing model is likely one reason that organizations gravitate toward Google. Also, Since Microsoft 365 is built on the legacy of Windows and Office, organizations that want to escape those products might use Google's Workspace."
+    ],
+    [
+      "Expensive? Don't / Only Partially Require Features Included?",
+      "Google Workspace comes packed with features and tools which might make your workflow much more efficient. However, the kind of workflow an individual has is subjective. Some might not even be interested in paying for features they aren't even going to use. If you fall under this category, please have a look at Zimbra Collaboration and Hybrid Email Solution."
+    ],
+    [
+      "Would It Be Possible To Retain My Exisiting Emails?",
+      "If you already have an existing email solution in place, you don't need to worry about the migration of your existing or old emails. We would be more than happy to provide full assistance with the migration process."
+    ],
+    [
+      "Payment Terms and Conditions",
+      "All of the solutions listed on this website require an annual commitment. Which means that you need to pay the whole year's invoice in advance if you agree to avail of the services after the demo/briefing. However, you can get an idea of your effective monthly spending by using the calculator provided above."
+    ]
+  ]
+}

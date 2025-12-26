@@ -1,0 +1,96 @@
+{
+    "brand_name": "Zimbra Collaboration",
+    "brand_color": "f15b24",
+    "path_css_file": "services/zimbra-collaboration.css",
+    "subheader_description": "Zimbra Collaboration, provides custom emails for your business (ex: hello@example.com) and is highly cost effective & flexible. It can help you save up to 90% on emailing solution costs.", 
+    "introduction_logo_link": "https://ik.imagekit.io/ofz58hgn5/Zimbra_Identity_Color_HighRes.png-440px_FtA7DA2RU.png?tr=w-240",
+    "introduction_heading": "Reduce your mailing costs with Zimbra Collaboration", 
+    "introduction_description": "Zimbra Collaboration is a very minimal email solution and is perfect for people looking for basic incoming and outgoing email functionality whether it is from webmail clients or full-fledged email clients such as Outlook, Thunderbird, etc. It provides custom emails for your business (ex: hello@example.com) and is highly cost-effective. It can be deployed both on-cloud or on-premises. You can use the calculator given below to check out our on-cloud configurations with pricing (you can request a custom quotation as per your requirement too). The best thing about Zimbra is that it can be coupled with Google Workspace / Microsoft 365 to make a hybrid deployment that would provide you the best of both worlds, <a href=\"/services/hybrid-email-solution\">click here</a> to learn more about <b>Hybrid Email Solution</b>.", 
+    "introduction_video_link": "https://www.youtube.com/embed/q3SdT9StGLA",
+    "features": [
+      {
+        "icon": "bx-rupee",
+        "heading": "Cost Effective",
+        "description": "As the focus is on providing only basic functionality in a reliable manner that makes this solution much more cost-effective than others. Single Managed Account of Zimbra would only cost Rs. 800 which is 3.15 times less if compared to Google Workspace's cheapest offering."
+      },
+      {
+        "icon": "bxs-server",
+        "heading": "Storage Location",
+        "description": "Deployment of this solution is highly flexible which means that you get to choose the part of the world you want your data to be stored in. We have preset for India (Asia) & Germany (Europe) available but you can request any location you want as per your requirement (pricing may vary)."
+      },
+      {
+        "icon": "bx-slider",
+        "heading": "Truly Unlimited",
+        "description": "If you opt for Managed Server you will be allowed to send as many emails as you want which means you can use your email server to send bulk email campaigns. However daily sending quota isn't the only unlimited thing, you can host unlimited users & domains on your Zimbra server."
+      },
+      {
+        "icon": "bxs-buildings",
+        "heading": "Flexible Deployment",
+        "description": "Zimbra can be deployed in multiple variations meaning that you can go for on-cloud option as shown below and pay a subscription fee or you can use your hardware and deploy it on-premises and pay a one-time setup fee (optional annual support), please contact us if you're interested."
+      }
+    ],
+    "plans": [
+      {
+        "name": "Managed Account",
+        "price": 800,
+        "item": "user",
+        "features": [
+          "Custom and secure business email",
+          "Suitable for upto 50 users",
+          "5 GB (India) or 30 GB (Germany) mail storage per user",
+          "Much cheaper than Google Workspace or Microsoft 365",
+          "Location Available: India & Germany",
+          "Standard Support"
+        ]
+      },
+      {
+        "name": "Managed Server",
+        "item": "server",
+        "sub_plans": {
+          "india": [
+            [150, 62400],
+            [300, 86400],
+            [450, 144000],
+            [600, 216000],
+            [1200, 360000]
+          ],
+          "germany": [
+            [1000, 72000],
+            [2000, 84000],
+            [4000, 108000],
+            [8000, 156000],
+            [16000, 252000]
+
+          ]
+        },
+        "features": [
+          "Custom and secure business email",
+          "Suitable for more than 50 users",
+          "Isolated server just for your organization",
+          "Highly flexible server specification ",
+          "No limit on number of users",
+          "Highly recommended for organization with large number of users",
+          "Location Available: India & Germany",
+          "Standard Support"
+        ]
+      }
+    ],
+    "faq_questions": [
+      [
+        "Why Pick Zimbra Collaboration Over Google Workspace or Microsoft 365?",
+        "Both Google Workspace and Microsoft 365 come packed with features and tools which might make your workflow much more efficient. However, the kind of workflow an individual has is subjective. Some might not even be interested in paying for features they aren't even going to use. If you fall under this category then most probably Zimbra is just the email solution you are looking for! However, you can still check out our <b>Hybrid Email Solution</b>, <a href=\"/services/hybrid-email-solution\">click here</a> to learn more."
+      ],
+      [
+        "Miss The Features? Need More Than Just Basic Functionality? ",
+        "The best thing about Zimbra is that it can be coupled with Google Workspace / Microsoft 365 to make a hybrid deployment that would provide you the best of both worlds, <a href=\"/services/hybrid-email-solution\">click here</a> to learn more about <b>Hybrid Email Solution</b>."
+      ],
+      [
+        "Would It Be Possible To Retain My Exisiting Emails?",
+        "If you already have an existing email solution in place, you don't need to worry about the migration of your existing or old emails. We would be more than happy to provide full assistance with the migration process."
+      ],
+      [
+        "Payment Terms and Conditions",
+        "All of the solutions listed on this website require an annual commitment. Which means that you need to pay the whole year's invoice in advance if you agree to avail of the services after the demo/briefing. However, you can get an idea of your effective monthly spending by using the calculator provided above."
+      ]  
+    ]
+  }

@@ -1,0 +1,28 @@
+/** Subheader Section **/
+
+section#subheader h1::after {
+    background-color: #4285f4;
+}
+
+/** Features Section **/
+
+section#features .feature .icon, section#features .feature .icon:before {
+    background: #4285f4;
+    background: linear-gradient(90deg, rgba(66, 133, 244, 1) 0%, rgba(104, 157, 246, 1) 100%);
+}
+
+/** Pricing Section **/
+
+section#pricing {
+    background: rgba(236, 243, 254, 1);
+    background: linear-gradient(90deg, rgba(217, 231, 253, 1) 0%, rgba(236, 243, 254, 1) 100%);
+}
+
+section#pricing .plan .name {
+    background-color: #4285f4;
+}
+
+section#pricing .plan .features ul li:before {
+    content: url('https://ik.imagekit.io/kvit/emailsolutions/services/google-workspace/list-bullet.svg');
+}
+

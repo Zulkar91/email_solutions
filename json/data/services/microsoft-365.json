@@ -1,0 +1,91 @@
+{
+  "brand_name": "Microsoft 365",
+  "brand_color": "f65314",
+  "path_css_file": "services/microsoft-365.css",
+  "subheader_image_link": "https://ik.imagekit.io/kvit/emailsolutions/services/microsoft-365/subheader.svg",
+  "calculator_svg_link": "https://ik.imagekit.io/kvit/emailsolutions/services/microsoft-365/calculator.svg",
+  "faq_svg_link": "https://ik.imagekit.io/kvit/emailsolutions/services/microsoft-365/faq.svg",
+  "subheader_description": "Microsoft 365, formerly known as Office 365, provides custom emails for your business and is a collection of services & tools provided by Microsoft like Outlook, Onedrive, Word, Excel etc.", 
+  "introduction_logo_link": "https://ik.imagekit.io/kvit/emailsolutions/services/microsoft-365/logo.png?tr=w-280",
+  "introduction_heading": "Increase your productivity with Microsoft 365", 
+  "introduction_description": "Microsoft 365, formerly known as Office 365, is a feature-packed suite of tools which provides you a comprehensive, intelligent platform to increase your productivity & optimize your workflow. You can access all Microsoft 365 tools in one place from wherever you are and on whichever device is most convenient to you - whether that's a phone, laptop or tablet. One of the biggest perk of choosing Microsoft 365 could be it's included (Business Standard or above) licensing of desktop version of Word, Excel, PowerPoint etc. Contact us to get started right away with Microsoft 365 for your business!", 
+  "introduction_video_link": "https://www.youtube.com/embed/5BfQ4_H1CLk",
+  "features": [
+    {
+      "icon": "bxs-envelope",
+      "heading": "Mail",
+      "description": "Microsoft 365 gives ability to  create a personalized email address that's associated with your mailbox. (For ex, yourname@example.com), subscribers get 50 GB of email storage as a subscription benefit. Users also get to enjoy an ad-free Outlook.com mailbox. Without ads, you have less distractions and enjoy faster page load times."
+    },
+    {
+      "icon": "bxs-server",
+      "heading": "Storage",
+      "description": "Microsoft OneDrive (included in Microsoft 365 Suite) allows you to access your files from any device. You can safely store, access, co-author, and update files from anywhere, and easily share files inside and outside your organization. Every plan includes 1TB of Onedrive Storage."
+    },
+    {
+      "icon": "bxs-chat",
+      "heading": "Communication",
+      "description": "In terms of communication, besides traditional mailing, Mircosoft 365 is also comes with apps like Teams (which is a video conferencing app) and SharePoint (which is a file / information sharing), these apps help to communicate with the team more efficiently."
+    },
+    {
+      "icon": "bxs-group",
+      "heading": "Collaborative Suite",
+      "description": "It includes powerful web/desktop (according to plan) based collaborative tools such as Word, Excel, Powerpoint, etc. These tools give the ability to collaborate and create in real-time. Work on a single document with your teammates or people outside your company at ease. Multiple users can work simultaneously."
+    }
+  ],
+  "plans": [
+    {
+      "name": "Business Basic",
+      "price": 1500,
+      "features": [
+        "Custom and secure business email",
+        "50GB MailBox storage",
+        "1TB OneDrive storage",
+        "Web and mobile versions of Word, Excel, and PowerPoint included",
+        "Standard Support"
+      ]
+    },
+    {
+      "name": "Business Standard",
+      "price": 7920,
+      "features": [
+        "Custom and secure business email",
+        "50GB MailBox storage",
+        "1TB OneDrive storage",
+        "Web, mobile, <b>desktop</b> versions of Outlook, Word, Excel, and PowerPoint included",
+        "Standard Support"
+      ]
+    },
+    {
+      "name": "Business Premium",
+      "price": 17280,
+      "features": [
+        "Custom and secure business email",
+        "50GB MailBox storage",
+        "1TB OneDrive storage",
+        "Web, mobile, <b>desktop</b> versions of Outlook, Word, Excel, and PowerPoint included",
+        "Advanced threat protection",
+        "PC and mobile device management",
+        "Standard Support"
+      ]
+    }
+  ],
+  "faq_questions": [
+    [
+      "Why Microsoft 365 over Google Workspace?",
+      "Every business has different needs, and yours may place greater value on certain apps than others. However one of the reasons to select Microsoft 365 over Google Workspace can be Microsoft's attractive storage offering at the entry-level plan. Microsoft 365 provides 1TB of OneDrive storage and 50GB of mailbox storage in each of its plan, on the other hand, Google Workspace only provides 30GB of combined (Mailbox + Google Drive) storage in the cheapest plan available."
+    ],
+    [
+      "Expensive? Don't / Only Partially Require Features Included?",
+      "Microsoft 365 comes packed with features and tools which might make your workflow much more efficient. However, the kind of workflow an individual has is subjective. Some might not even be interested in paying for features they aren't even going to use. If you fall under this category, please have a look at Zimbra Collaboration and Hybrid Email Solution."
+    ],
+    [
+      "Would It Be Possible To Retain My Exisiting Emails?",
+      "If you already have an existing email solution in place, you don't need to worry about the migration of your existing or old emails. We would be more than happy to provide full assistance with the migration process."
+    ],
+    [
+      "Payment Terms and Conditions",
+      "All of the solutions listed on this website require an annual commitment. Which means that you need to pay the whole year's invoice in advance if you agree to avail of the services after the demo/briefing. However, you can get an idea of your effective monthly spending by using the calculator provided above."
+    ]
+
+  ]
+}

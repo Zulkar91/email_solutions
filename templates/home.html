@@ -1,0 +1,201 @@
+{% extends 'layout.html' %} 
+
+{% block stylesheets %} 
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='sections.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+{% endblock %} 
+
+{% block layout_content %}
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+
+                <!-- Text Heading & Text -->
+                <div class="col-lg-6 p-5 order-2 order-lg-1">
+                    <h1 class="heading">
+                        Email Solutions <br/> Made Easy
+                    </h1>
+                    <p class="py-3" style="width: 90%">We assist you to modernize your email infra by deploying solutions that will enhance your digital transformation journey to meet business goals and drive growth.</p>
+                    <a href="/contact" class="btn btn-primary btn-lg">Get In Touch</a>
+                </div>
+
+                <!-- Right Vector -->
+                <div class="col-lg-6 d-flex justify-content-center align-items-center order-1 order-lg-2 p-5">
+                <img style="max-width: 100%;" alt="Banner SVG" 
+                    src="https://ik.imagekit.io/kvit/emailsolutions/home/banner.svg" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-lg-4 p-5">
+                    <img style="max-width: 100%;" alt="Services SVG" 
+                    src="https://ik.imagekit.io/kvit/emailsolutions/home/services.svg" />
+                </div>
+
+                <div class="col-lg-7 offset-lg-1">
+                    <h2>Our <b style="color:#272687">Business Email</b> Solutions</h2>
+                    <p style="width: 90%">
+                        Select from a range of email solutions provided by KV-IT Solutions Pvt. Ltd. to host your organization's email accounts on providers such as Google Workspace (formerly known as G Suite), Microsoft 365 (formerly known as Office 365), Zimbra Collaboration or save money by opting for Hybrid Email Solution.
+                    </p>
+
+                    <div class="row g-4 mt-3">
+
+                        <div class="col-lg-6">
+                            <a href="/services/google-workspace" class="card h-100 shadow text-decoration-none animate">
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <img src="https://ik.imagekit.io/kvit/emailsolutions/services/google-workspace/logo.png?tr=w-280" alt="">
+                                </div>
+                                <div class="card-footer text-center" style="background-color: #4285f4;">
+                                    <span class="text-white text-decoration-none fw-bolder">View All Details</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <a href="/services/microsoft-365" class="card h-100 shadow text-decoration-none animate">
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <img src="https://ik.imagekit.io/kvit/emailsolutions/services/microsoft-365/logo.png?tr=w-280" alt="">
+                                </div>
+                                <div class="card-footer text-center" style="background-color: #f65314;">
+                                    <span class="text-white text-decoration-none fw-bolder">View All Details</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <a href="/services/zimbra-collaboration" class="card h-100 shadow text-decoration-none animate">
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <img src="https://ik.imagekit.io/kvit/emailsolutions/services/zimbra-collaboration/logo.png?tr=w-250" alt="">
+                                </div>
+                                <div class="card-footer text-center" style="background-color: #f15b24;">
+                                    <span class="text-white fw-bolder">View All Details</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <a href="/services/hybrid-email-solution" class="card h-100 shadow text-decoration-none animate">
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <img src="https://ik.imagekit.io/kvit/emailsolutions/services/hybrid-email-solution/logo.png?updatedAt=1640864226584" alt="">
+                                </div>
+                                <div class="card-footer text-center" style="background-color: #6C63FF;">
+                                    <span class="text-white text-decoration-none fw-bolder">View All Details</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Our Clients -->
+    <section id="clients">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <h2>Our Clients</h2>
+                    <p>Over 200+ happy clients consisting of SMEs & SMBs around India.</p>
+
+                    <div class="row">
+                        {% for x in '123456987' %}
+                            <div class="col-lg-4 col-sm-6 text-center">
+                                <img src="https://ik.imagekit.io/kvit/emailsolutions/home/clients/{{ x }}.png" style="max-height: 50px; max-width: 100%" class="m-2" alt="" srcset="">
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <p class="mt-3">Companies shown above are some of our top clients.</p>
+                    
+
+                </div>
+        
+                <div class="col-lg-5 offset-lg-1 order-1 order-lg-2 p-5">
+                    <img style="max-width: 100%;" alt="Clients SVG" 
+                    src="https://ik.imagekit.io/kvit/emailsolutions/home/clients.svg" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    
+
+    <!-- Frequently Asked Questions -->
+    <section id="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 p-5">
+              <img class="mw-100" src="https://ik.imagekit.io/kvit/emailsolutions/home/faq.svg" alt="FAQ SVG" />
+            </div>
+      
+            <div class="col-lg-6 offset-lg-1">
+              <h2 class="h1">Frequently Asked Questions</h2>
+              <p class="text-muted">
+                These are some of the most frequently asked questions about our company & services, however if you don't find answer to your query in this section please feel free to contact us regarding the same.
+              </p>
+      
+              <div class="accordion accordion-flush">
+
+                    {% for item in faq_questions %}
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="accordion-{{ loop.index }}-heading">
+                                <button class="accordion-button {% if loop.index != 1 %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{{ loop.index }}" aria-expanded="{% if loop.index == 1 %}true{% else %}false{% endif %}" aria-controls="accordion-{{ loop.index }}">
+                                {{ item[0] }}
+                                </button>
+                            </div>
+
+                            <div id="accordion-{{ loop.index }}" class="accordion-collapse collapse {% if loop.index == 1 %}show{% endif %}" aria-labelledby="accordion-{{ loop.index }}-heading" data-bs-parent="#faq">
+                                <div class="accordion-body">{{ item[1]|safe }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="hybrid">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+                    <h2 class="h1">Most <span class="default-text">Cost Effective</span><span class="change-wrapper"></span> Mailing Solution</h2>
+                    <p>Pay for only what you need! Most Google Workspace / Microsoft 365 customers end up over-spending on their email solution because majority of their users don't need the entire feature packed suite. <b>Save upto 90%</b> by segmenting your pro &amp; regular users (For example: 20 accounts on Zimbra Collaboration &amp; 80 accounts on Zimbra) with the help of our <i class="bx bx-atom"></i> Hybrid Email Solution.</p>
+                    <a href="/services/hybrid-email-solution" class="btn btn-lg btn-hybrid shadow mt-3">Learn More About Hybrid Email Solution</a>
+                </div>
+
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="card shadow">
+                        <div class="card-body d-flex justify-content-center align-items-center my-4">
+                        <img class="mw-100" alt="Hybrid Email Solution Diagram" 
+                            src="https://ik.imagekit.io/kvit/emailsolutions/services/hybrid-email-solution/diagram.png?tr=h-300">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+

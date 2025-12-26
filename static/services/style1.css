@@ -1,0 +1,188 @@
+section {
+    padding: 5rem 0 5rem 0;
+}
+
+/** Subheader Section **/
+
+section#subheader {
+    background-color: #f8f9fc;
+}
+
+section#subheader h1 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section#subheader h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+}
+
+
+/** Introduction Section **/
+
+section#introduction iframe {
+    width: 100%;
+    height: 300px;
+}
+
+section#introduction h2 {
+    margin: 1rem 0 1.5rem 0;
+}
+
+section#introduction p {
+    width: 90%;
+}
+
+/** Features Section **/
+
+section#features {
+    background-color: #f8f9fc;
+}
+
+section#features .heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+section#features .features {
+    width: 70%;
+    margin: auto;
+}
+
+section#features .feature {
+    margin-bottom: 20px;
+}
+
+section#features .feature .icon {
+    width: 55px;
+    height: 60px;
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-radius: 50%/14%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 64px;
+    z-index: 1;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .30) !important;
+
+}
+
+section#features .feature .icon:before {
+    position: absolute;
+    content: "";
+    top: 10%;
+    right: -5.5%;
+    bottom: 10%;
+    left: -5.5%;
+    border: 0;
+    border-radius: 7.5%/50%;
+    text-shadow: none;
+    z-index: -1;
+}
+
+section#features .feature p {
+    margin-top: 20px;
+    padding: 0 15px;
+    text-align: justify;
+    color: #4e4e4e;
+}
+
+
+/** Pricing Section **/
+
+section#pricing .plan {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    margin-bottom: 1.5rem;
+    height: 100%;
+}
+
+section#pricing .plan .name {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 auto 0 auto;
+    padding: .25rem 1.5rem .25rem 1.5rem;
+    border-radius: 0 0 .25rem .25rem;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+section#pricing .plan .price .symbol {
+    font-size: 36px;
+}
+
+section#pricing .plan .price .amount {
+    font-size: 32px;
+}
+
+section#pricing .plan .price .gst {
+    display: block;
+}
+
+section#pricing .plan .features {
+    border-top: 1px #eee solid;
+    margin: 20px 20px 20px 0;
+}
+
+section#pricing .plan .features ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+section#pricing .plan .features ul li {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+section#pricing .plan .features ul li:before {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-left: -30px;
+    position: absolute;
+    margin-top: 1px;
+}
+
+
+/** Calculator Sector **/
+
+section#calculator {
+    background-color: #f8f9fc;
+}
+
+
+section#calculator table tr td:first-child {
+    font-weight: 600;
+}
+
+section#calculator table tr td {
+    text-align: right;
+}
+
+section#calculator table tr:last-child td {
+    border-bottom: 0;
+}
+
+section#calculator .monthly-estimate {
+    text-align: right;
+}
+
+section#calculator .monthly-estimate span:first-child  {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+section#calculator .monthly-estimate span:last-child  {
+    font-size: 1.75rem;
+}
+
+/** FAQ Section **/
+
+section#faq {
+    background-color: #f8f9fc;
+}

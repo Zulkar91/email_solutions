@@ -1,0 +1,24 @@
+section {
+    padding: 5rem 0 5rem 0;
+}
+
+/** Subheader Section **/
+
+section#subheader {
+    background-color: #f8f9fc;
+}
+
+section#subheader h1 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section#subheader h1::after {
+    content: "";
+    background-color: #272687;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+}

@@ -1,0 +1,65 @@
+/* Banner Section */
+
+#banner {
+    height: calc(100vh - 57px);
+    display: flex;
+    align-items: center;
+    background: #f8f9fc url(https://ik.imagekit.io/kvit/emailsolutions/home/pattern.svg) repeat 100% 100%;
+}
+
+#banner .heading {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#banner .btn-primary {
+    background-color: #272687!important;
+    border-color: #1c1b80!important;
+}
+
+/* Clients Section */
+
+#clients {
+    background: #f8f9fc;
+}
+
+/* Hybrid Section */
+
+#hybrid {
+    background: #f8f9fc;
+}
+
+#hybrid .default-text {
+    display: none;
+    color: #6C63FF;
+}
+
+#hybrid .change-wrapper {
+    color: #6C63FF;
+}
+
+#hybrid .change-wrapper:before {
+    content: "Cost Effective";
+    animation: animate infinite 3s;
+}
+
+@keyframes animate {
+  
+    0% {
+        content: "Cost Effective";
+    }
+
+    50% {
+        content: "Powerful";
+    }
+
+    75% {
+        content: "Flexible";
+    }
+}
+
+#services .card img {
+    width: 100%;
+    max-width: fit-content;
+}
+

@@ -1,0 +1,38 @@
+{
+    "features": [
+      {
+        "icon": "bx-rupee",
+        "heading": "Cost Effective",
+        "description": "Combine Zimbra with Microsoft 365 or Google Workspace to save upto 90% of your costs as normal users don't usually require all the features on offer by these all in one suites."
+      },
+      {
+        "icon": "bxs-zap",
+        "heading": "Zero Compromise",
+        "description": "With a combination of highly cost effective Zimbra and feature rich all in one productivity suites the users who require the features will not have to compromise with our hybrid email solution."
+      },
+      {
+        "icon": "bx-slider",
+        "heading": "Flexible Config",
+        "description": "Hybrid email solution is highly configurable as per your speific requirements, we tailor each order according to the requirement of each client, use the calculator given below for more clearity."
+      },
+      {
+        "icon": "bxs-plug",
+        "heading": "Plug and Play",
+        "description": "You do not need to make any changes if you are already hosted on Google Workspace or Microsoft 365 and want to switch to hybrid email solution, it is completely plug & play and can be deployed with your exisiting solution."
+      }
+    ],
+    "faq_questions": [
+      [
+        "Why go with Hybrid Mail Solution and not Google or Microsoft?",
+        "Simple Answer: <b>Cost Cutting</b>. If you know most of your users aren't using the features which come with Google Workspace or Microsoft 365 then why pay for them? In Hybrid Mail Solution, you make 2 or more group of users which then will be hosted on different email service providers but still work cohesively. You can get the best of both (or many) worlds by dividing your users into pro and regular groups then host pro users on Google / Microsoft and regular users on a low cost solution like <a href=\"/services/zimbra-collaboration\">Zimbra Collaboration</a>."
+      ],
+      [
+        "Would It Be Possible To Retain My Exisiting Emails?",
+        "If you already have an existing email solution in place, you don't need to worry about the migration of your existing or old emails. We would be more than happy to provide full assistance with the migration process."
+      ],
+      [
+        "Payment Terms and Conditions",
+        "All of the solutions listed on this website require an annual commitment. Which means that you need to pay the whole year's invoice in advance if you agree to avail of the services after the demo/briefing. However, you can get an idea of your effective monthly spending by using the calculator provided above."
+      ]
+    ]
+  }

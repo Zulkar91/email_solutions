@@ -1,0 +1,288 @@
+{% extends 'layout.html' %} 
+
+{% block stylesheets %} 
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='services/style1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename=path_css_file) }}" />
+{% endblock %} 
+
+{% block layout_content %}
+
+<!-- Subheader -->
+<section id="subheader">
+  <div class="container">
+    <div class="row">
+
+      <!-- Left Vector -->
+      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <img
+          class="mw-100"
+          src="https://ik.imagekit.io/kvit/emailsolutions/services/zimbra-collaboration/subheader.svg"
+          alt="{{ brand_name }} Fancy SVG"
+        />
+      </div>
+
+      <!-- Text Heading & Text -->
+      <div class="col-lg-5 p-5">
+        <h1>{{ brand_name }}</h1>
+        <p>{{ subheader_description }}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section id="introduction">
+
+  <div class="container px-lg-0 px-4">
+
+    <div class="row">
+      <!-- Logo, Heading & Text -->
+      <div class="col-lg-7">
+        <img src="https://ik.imagekit.io/kvit/emailsolutions/services/zimbra-collaboration/logo.png?tr=w-250" alt="{{ brand_name }} Logo" />
+        <h2 class="h3">{{ introduction_heading }}</h2>
+        <p>{{ introduction_description|safe }}</p>
+      </div>
+
+      <!-- Youtube Intro Embed -->
+      <div class="col-lg-5">
+        <iframe
+          class="shadow"
+          loading="lazy"
+          src="{{ introduction_video_link }}"
+        ></iframe>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Features -->
+<section id="features">
+
+  <div class="container">
+
+    <div class="heading">
+      <h2 class="h1">Features & Functionality</h2>
+      <p class="text-muted mb-0">Overview of features included in {{ brand_name }}</p>
+    </div>
+
+    <div class="row px-lg-0 px-4">
+
+      {% for feature in features %}
+        <div class="col-lg-3 feature text-center">
+            <div class="icon shadow mx-auto">
+            <i class="bx {{ feature['icon'] }}"></i>
+            </div>
+            <h3>{{ feature['heading'] }}</h3>
+            <p>{{ feature['description'] }}</p>
+        </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing">
+
+  <div class="container">
+
+    <div class="heading text-center" style="margin-bottom: 60px">
+      <h2 class="h1">Plans & Pricing</h2>
+      <p class="text-muted mb-0">
+        Brief overview of plans with their pricing offered by {{ brand_name }}
+      </p>
+    </div>
+
+
+    <div class="row d-flex justify-content-center">
+
+      {% for plan in plans %}      
+        <div class="col-lg-4 mb-4">
+          <div class="card plan">
+            <span class="name">{{ plan.name }}</span>
+            <div class="card-body">
+              <div class="price text-center">
+                {% if plan.price %}
+                  <span class="symbol">₹</span>
+                  <span class="amount">{{ plan.price }}</span>
+                  <span class="period">{{ plan.item }}/year</span>
+                  <span class="gst">GST extra as application</span>
+                {% else %}
+                  <div class="text-center" style="font-size: 32px;">Call for Pricing</div>
+                  <div class="text-center" style="font-size: 16px;">or make use of calculator given below</div>
+                {% endif %}
+              </div>
+              <div class="features">
+                <ul>
+                    {% for feature in plan.features %}
+                      <li>{{ feature|safe }}</li>
+                    {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Calculator -->
+<section id="calculator">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-5">
+        <h2 class="h1">Get Instant Estimate</h2>
+        <p class="text-muted">
+          Find out how much would you be spending on your Email Solution with the help of this simple cost calculator.
+        </p>
+        
+        <div class="card shadow mt-4">
+            <div class="card-body">
+                <div class="row">
+                  <div class="col-6">
+                    <b>Plan</b>
+                    <select class="form-select mt-1" name="type">
+                      <option value="account">
+                        Managed Account
+                      </option>
+                      <option value="server">
+                        Managed Server
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="col-6">
+                    <b>Location</b>
+                    <select class="form-select mt-1" name="location">
+                      <option value="india">
+                        India
+                      </option>
+                      <option value="germany">
+                        Germany
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="server-wrapper mt-2" hidden>
+                  <b>Total Server Storage</b>
+                  <select class="form-select mt-1 india" name="server-plan"></select>
+                </div>
+
+                <div class="account-wrapper row mt-2">
+                  <div class="col-6">
+                    <b>Accounts</b>
+                    <input type="number" class="form-control mt-1" value="5" min="1" name="account-amount">
+                  </div>
+                  
+                  <div class="col-6">
+                    <b>Storage per user</b>
+                    <input type="text" class="form-control mt-1" value="5GB" name="account-storage" disabled>
+                  </div>
+                </div>
+
+                <table class="table table-sm mt-4"></table>
+                <div class="alert alert-success monthly-estimate">
+                  <span>Effective Monthly Price</span><br/><span></span>
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 offset-lg-2 order-first order-md-last p-5 align-middle">
+        <img class="mw-100" src="https://ik.imagekit.io/kvit/emailsolutions/services/zimbra-collaboration/calculator.svg" alt="Calculator SVG" />
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Hybrid Email Solution Pitch -->
+
+<section id="hybrid">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-7">
+        <h2>Try <span class="hybrid-color">Hybrid</span> & Get The Best of Both Worlds!</h2>
+        <p class="mt-4">Supercharge your email solution by getting the best of both worlds. Combine Zimbra Collaboration with Google Workspace or Microsft 365 and get to benefit from productivity tools included in these all-in-one suites and also keep the cost effectiveness of Zimbra by hosting majority of your users on it. Compared to pricing if you go for Google Workspace or Microsft 365 for all your users, you can <b>save upto 90%</b> by segmenting your pro & regular (For example: 20 accounts on Microsoft 365 & 80 accounts on Zimbra) with the help of our <i class="bx bx-atom"></i> Hybrid Email Solution.</p>
+        <a href="/services/hybrid-email-solution" class="btn btn-lg btn-hybrid shadow mt-3">Learn More About Hybrid Email Solution</a>
+      </div>
+
+      <div class="col-lg-4 offset-lg-1 order-first order-md-last mb-md-0 mb-5">
+        <div class="card shadow">
+          <div class="card-body d-flex justify-content-center align-items-center my-4">
+            <img class="mw-100" alt="Hybrid Email Solution Diagram" 
+              src="https://ik.imagekit.io/kvit/emailsolutions/services/hybrid-email-solution/diagram.png?tr=h-300">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 p-5">
+        <img class="mw-100" src="https://ik.imagekit.io/kvit/emailsolutions/services/zimbra-collaboration/faq.svg" alt="FAQ SVG" />
+      </div>
+
+      <div class="col-lg-6 offset-lg-1">
+        <h2 class="h1">Frequently Asked Questions</h2>
+        <p class="text-muted">
+          These are some of the most frequently asked questions about {{ brand_name }}, however if you don't find answer to your query in this section please feel free to contact us regarding the same.
+        </p>
+
+        <div class="accordion accordion-flush" id="faq">
+
+            {% for item in faq_questions %}
+                <div class="accordion-item">
+                    <div class="accordion-header" id="accordion-{{ loop.index }}-heading">
+                        <button class="accordion-button {% if loop.index != 1 %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{{ loop.index }}" aria-expanded="{% if loop.index == 1 %}true{% else %}false{% endif %}" aria-controls="accordion-{{ loop.index }}">
+                        {{ item[0] }}
+                        </button>
+                      </div>
+
+                    <div id="accordion-{{ loop.index }}" class="accordion-collapse collapse {% if loop.index == 1 %}show{% endif %}" aria-labelledby="accordion-{{ loop.index }}-heading" data-bs-parent="#faq">
+                        <div class="accordion-body">{{ item[1]|safe }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %} 
+    {{ super() }}
+
+    <script>
+      const jinja_plans = JSON.parse('{{ plans|tojson }}')
+    </script>
+    <script src="{{ url_for('static', filename='services/calc-zimbra.js') }}"></script>
+{% endblock %} 
+
+
