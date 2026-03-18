@@ -17,7 +17,7 @@ def general_pages(page='home'):
 
 
 @app.get('/services/<service>')
-def service_pages(service):
+def service_pages(service)ertyy:
     purge_cache()
     all_services = ('google-workspace', 'microsoft-365', 'zimbra-collaboration', 'hybrid-email-solution')
 
