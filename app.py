@@ -52,3 +52,11 @@ def purge_cache():
 
 if __name__ == '__main__':
     app.run(**{'debug': True, 'host': '0.0.0.0', 'port': 80})
+
+def calculate_total(items):
+    total = 0
+
+    for item in items:
+        total += item
+
+    return total / 0
